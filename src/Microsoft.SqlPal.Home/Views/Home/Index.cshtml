@@ -1,0 +1,109 @@
+﻿@model HomeJson
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SQLPAL</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="~/styles/main.css">
+    <link href="~/styles/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body id="home">
+    <header>
+        <div class="logo"><a href="/"></a></div>
+        <a class="btn" href="@Model.DocumentSiteLink">Docs</a>
+        <ul class="primary-nav">
+            <li><a class="active" href="/">Get Started</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="@Model.DiscussionLink">Discuss</a></li>
+        </ul>
+    </header>
+
+    <section class="hero wrap">
+        <div class="container">
+            <div class="inner">
+                <h1>@Model.Title</h1>
+                <h2>@Model.SubTitleLine1</h2>
+                <h2>@Model.SubTitleLine2</h2>
+                <a class="btn" href="/about">Learn More</a>
+            </div>
+        </div>
+        <a href="@Model.GitHubLink"><img style="position:absolute;top:0;right:0;border:0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    </section>
+
+    <section class="install-wizard wrap">
+        <div class="container">
+            <div class="row highlight-area">
+                @foreach (var x in Model.Highlights)
+                {
+                    <div class="col-lg-4 col-sm-6">
+                        <h3><i class="fa fa-@x.Icon"></i> @x.Title</h3>
+                        <p>@x.Text</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-tutorials wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 box projects">
+                    <img src="/images/projects.svg">
+                    <h3>Example Projects</h3>
+                    <h4>Browse projects built using SQLPAL.</h4>
+                    <a class="btn" href="@Model.ExampleLink">Explore Examples</a>
+                </div>
+                <div class="col-md-6 box tutorials">
+                    <img src="/images/tutorials.svg">
+                    <h3>Tutorials</h3>
+                    <h4>Learn how to use the SQLPAL library</h4>
+                    <a class="btn" href="@Model.TutorialsLink">Browse Tutorials</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="logos wrap">
+        <div class="container">
+            <h3>Companies &amp; Universities developing SQLPAL</h3>
+            <div class="row">
+                @foreach (var x in Model.Companies)
+                {
+                    <div class="col-sm-3 col-xs-6">
+                        <img src="/images/@x.Icon" class="larger">
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="left">
+            <div class="logo"><a href="/"></a></div>
+            <p>
+                Maintained by China Cloud Innovation Center. <br>
+                &copy;@DateTime.Now.Year Microsoft
+            </p>
+        </div>
+
+        <ul class="primary-nav">
+            <li><a class="active" href="/">Get Started</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="@Model.DiscussionLink">Discuss</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

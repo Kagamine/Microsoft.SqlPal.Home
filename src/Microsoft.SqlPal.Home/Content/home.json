@@ -1,0 +1,52 @@
+﻿{
+  "Title": "Tensors and Dynamic neural networks in Python with strong GPU acceleration.",
+  "SubTitleLine1": "PyTorch is a deep learning framework that puts Python first.",
+  "SubTitleLine2": "We are in an early-release Beta. Expect some adventures.",
+  "DocumentSiteLink": "http://yiszheng-vm1",
+  "ExampleLink": "https://github.com/pytorch/examples",
+  "TutorialsLink": "http://yiszheng-vm1/tutorials/index.md",
+  "DiscussionLink": "#",
+  "GitHubLink": "#",
+  "Companies": [
+    {
+      "Icon": "microsoft.png",
+      "Link": "http://www.microsoft.com"
+    },
+    {
+      "Icon": "nvidia.png",
+      "Link": "http://www.nvidia.cn/page/home.html"
+    }
+  ],
+  "Highlights": [
+    {
+      "Icon": "flag",
+      "Title": "Flexible",
+      "Text": "Supports both imperative and symbolic programming"
+    },
+    {
+      "Icon": "flag",
+      "Title": "Flexible",
+      "Text": "Supports both imperative and symbolic programming"
+    },
+    {
+      "Icon": "flag",
+      "Title": "Flexible",
+      "Text": "Supports both imperative and symbolic programming"
+    },
+    {
+      "Icon": "flag",
+      "Title": "Flexible",
+      "Text": "Supports both imperative and symbolic programming"
+    },
+    {
+      "Icon": "flag",
+      "Title": "Flexible",
+      "Text": "Supports both imperative and symbolic programming"
+    },
+    {
+      "Icon": "flag",
+      "Title": "Flexible",
+      "Text": "Supports both imperative and symbolic programming"
+    }
+  ]
+}
