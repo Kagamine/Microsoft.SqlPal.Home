@@ -1,16 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E322B0CA-32C9-4DD1-B3BB-993BE82251BC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C26C046F-0ACB-48CF-869A-B669F0D29057}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.SqlPal.Home", "src\Microsoft.SqlPal.Home\Microsoft.SqlPal.Home.xproj", "{96E9424F-745C-4B4C-84A5-E6364194F6E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.SqlPal.Home", "src\Microsoft.SqlPal.Home\Microsoft.SqlPal.Home.csproj", "{96E9424F-745C-4B4C-84A5-E6364194F6E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
